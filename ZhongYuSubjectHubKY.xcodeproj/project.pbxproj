@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045102251D1E814B00A67CD3 /* KYWelcome.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 045102241D1E814B00A67CD3 /* KYWelcome.jpg */; };
 		047C98861CDC225B0080F8F1 /* UMengAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 047C98831CDC225B0080F8F1 /* UMengAnalyticsManager.m */; };
 		047C98871CDC225B0080F8F1 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 047C98841CDC225B0080F8F1 /* libMobClickLibrary.a */; };
 		120025621CE76D3800B203D4 /* RWWelcomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 120025611CE76D3800B203D4 /* RWWelcomeController.m */; };
 		120025651CE76E1300B203D4 /* RWWelcomeImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 120025641CE76E1300B203D4 /* RWWelcomeImageCell.m */; };
+		120FEBCE1D2F47EF001F989B /* yjWelcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 120FEBCD1D2F47EF001F989B /* yjWelcome.png */; };
 		122385EF1CF42B26003F98FB /* RWCountDownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 122385EE1CF42B26003F98FB /* RWCountDownController.m */; };
 		122386311CF45136003F98FB /* RWPickerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 122386301CF45136003F98FB /* RWPickerViewCell.m */; };
 		122386341CF56144003F98FB /* RWDeployManager+DateProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = 122386331CF56144003F98FB /* RWDeployManager+DateProcess.m */; };
@@ -495,7 +495,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		045102241D1E814B00A67CD3 /* KYWelcome.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = KYWelcome.jpg; sourceTree = "<group>"; };
 		047C98801CDC225B0080F8F1 /* MobClick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClick.h; sourceTree = "<group>"; };
 		047C98811CDC225B0080F8F1 /* MobClickSocialAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobClickSocialAnalytics.h; sourceTree = "<group>"; };
 		047C98821CDC225B0080F8F1 /* UMengAnalyticsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UMengAnalyticsManager.h; sourceTree = "<group>"; };
@@ -505,6 +504,7 @@
 		120025611CE76D3800B203D4 /* RWWelcomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWWelcomeController.m; sourceTree = "<group>"; };
 		120025631CE76E1300B203D4 /* RWWelcomeImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RWWelcomeImageCell.h; path = UMAnalytics_Sdk_3.6.6/RWWelcomeImageCell.h; sourceTree = "<group>"; };
 		120025641CE76E1300B203D4 /* RWWelcomeImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RWWelcomeImageCell.m; path = UMAnalytics_Sdk_3.6.6/RWWelcomeImageCell.m; sourceTree = "<group>"; };
+		120FEBCD1D2F47EF001F989B /* yjWelcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = yjWelcome.png; path = BokeCCImages/yjWelcome.png; sourceTree = "<group>"; };
 		122385ED1CF42B26003F98FB /* RWCountDownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWCountDownController.h; sourceTree = "<group>"; };
 		122385EE1CF42B26003F98FB /* RWCountDownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWCountDownController.m; sourceTree = "<group>"; };
 		1223862F1CF45136003F98FB /* RWPickerViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWPickerViewCell.h; sourceTree = "<group>"; };
@@ -2637,13 +2637,13 @@
 		12EC885D1CF82BF30078E9FD /* AddImage */ = {
 			isa = PBXGroup;
 			children = (
+				120FEBCD1D2F47EF001F989B /* yjWelcome.png */,
 				12ACD8741D27504900B34C3C /* goindex.png */,
 				12F446211D12AE4A00511336 /* edit_t.png */,
 				12F07DA81D10E48900EB3EA2 /* media_s.png */,
 				12F07DA91D10E48900EB3EA2 /* media.png */,
 				12BCD7E51D0E42A0008DA5DC /* communityHome.png */,
 				12DFC6461D138F3900C73FDF /* textBack.png */,
-				045102241D1E814B00A67CD3 /* KYWelcome.jpg */,
 				128F40C31CFBEAE70095F69B /* GGWelcome.png */,
 				125EC7E11CFA9E9500F893BA /* admin_gg.png */,
 				12EC88571CF825F40078E9FD /* Star1.png */,
@@ -3193,7 +3193,6 @@
 				12EFFD631CD8A0C00030C74F /* Previos_un.png in Resources */,
 				12ACD8111D274B7F00B34C3C /* download-status-hold@2x.png in Resources */,
 				12F445A61D12359500511336 /* Um.png in Resources */,
-				045102251D1E814B00A67CD3 /* KYWelcome.jpg in Resources */,
 				12ACD8181D274B7F00B34C3C /* player-bg-popup-selected.png in Resources */,
 				12ACD85E1D274B7F00B34C3C /* title_background.png in Resources */,
 				12FFF0AB1CCF18FF003F58E2 /* LaunchScreen.storyboard in Resources */,
@@ -3294,6 +3293,7 @@
 				12ACD8501D274B7F00B34C3C /* _index.scss in Resources */,
 				126169531D10FAF70055438B /* UMComFriendTableViewCell.xib in Resources */,
 				1261695C1D10FAF70055438B /* UMComFeedsTableViewCell.xib in Resources */,
+				120FEBCE1D2F47EF001F989B /* yjWelcome.png in Resources */,
 				12ACD8411D274B7F00B34C3C /* DWDownloaderGetPlayUrlsBlock.html in Resources */,
 				1263F6681CDB215E0089EC9F /* noti_s.png in Resources */,
 				12F446081D1299DC00511336 /* jquery.js in Resources */,
