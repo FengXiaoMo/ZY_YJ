@@ -87,9 +87,9 @@
     
     requestManager.delegate = self;
     
-    [requestManager replacePasswordWithUsername:@"18562599337"
+    [requestManager replacePasswordWithUsername:@"15239358919"
                                     AndPassword:@"qwertyu"
-                               verificationCode:@"7809"];
+                               verificationCode:@"1160"];
     
     CFRunLoopRun();
 }
@@ -113,7 +113,7 @@
     
     requestManager.delegate = self;
     
-    [requestManager userinfoWithUsername:@"18562599337"
+    [requestManager userinfoWithUsername:@"15239358919"
                              AndPassword:@"qwertyu"];
     
     CFRunLoopRun();
@@ -140,7 +140,7 @@
     
     [requestManager registerWithUsername:@"15239358919"
                              AndPassword:@"qwertyu"
-                        verificationCode:@"1671"];
+                        verificationCode:@"1160"];
 
         CFRunLoopRun();
 }
@@ -182,6 +182,17 @@
 - (void)subjectHubDownLoadDidFinish:(NSArray *)subjectHubs
 {
     XCTAssertNotNil(subjectHubs);
+    
+    CFRunLoopRef runLoopRef = CFRunLoopGetCurrent();
+    CFRunLoopStop(runLoopRef);
+}
+- (void)requestError:(NSError *)error Task:(NSURLSessionDataTask *)task
+{
+    if (error)
+    {
+        XCTFail(@"%@",error);
+        XCTFail(@"%@",task);
+    }
     
     CFRunLoopRef runLoopRef = CFRunLoopGetCurrent();
     CFRunLoopStop(runLoopRef);
@@ -255,14 +266,6 @@
 - (void)classListDownloadDidFinish:(NSMutableArray *)classListSource
 {
     XCTAssertNotNil(classListSource);
-    
-    CFRunLoopRef runLoopRef = CFRunLoopGetCurrent();
-    CFRunLoopStop(runLoopRef);
-}
-
-- (void)requestError:(NSError *)error Task:(NSURLSessionDataTask *)task
-{
-    XCTAssertNil(error);
     
     CFRunLoopRef runLoopRef = CFRunLoopGetCurrent();
     CFRunLoopStop(runLoopRef);
