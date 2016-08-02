@@ -64,11 +64,8 @@
     HIDDEN_TABBAR
     
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-    
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
-    
     [SVProgressHUD setFont:[UIFont systemFontOfSize:14]];
-    
     [SVProgressHUD showWithStatus:@"正在加载..."];
     
     if (_url)

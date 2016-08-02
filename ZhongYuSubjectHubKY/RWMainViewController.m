@@ -14,6 +14,7 @@
 #import "RWMainViewController+Drawer.h"
 #import "RWMainViewController+CountDownView.h"
 #import "RWCustomizeToolBar.h"
+#import "RWRequsetManager+ExamineVersion.h"
 
 @interface RWMainViewController ()
 
@@ -84,11 +85,8 @@
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation;
 {
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
-    
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeGradient];
-    
     [SVProgressHUD setFont:[UIFont systemFontOfSize:14]];
-    
     [SVProgressHUD showWithStatus:@"正在加载..."];
     
     if ([webView.URL.absoluteString isEqualToString:MAIN_INDEX.absoluteString])
@@ -187,6 +185,7 @@
     
     MAIN_NAV
     
+    [RWRequsetManager examineVersionWithController:self];
     [RWRequsetManager obtainExperienceTimes];
     
     [self initManagersAndDatas];
